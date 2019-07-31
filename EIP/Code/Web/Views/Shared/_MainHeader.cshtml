@@ -1,0 +1,48 @@
+﻿<header class="main-header">
+    <a href="/" class="logo">
+        <span class="logo-mini"></span>
+        <span class="logo-lg"></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" data-placement="right" id="resetSize"></a>
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                @*<li class="active"><a href="#">
+                        <i class="fa fa fa-cog"></i>系统设置
+                    </a>
+                 </li>*@
+                <li><div  id="tp-weather-widget"></div></li>
+                <li class="hidden-xs">
+                    <a href="#" data-toggle="fullscreen"><i class="fa fa-arrows-alt"></i></a>
+                </li>
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="~/css/user/avatar.jpg" class="user-image img-circle" alt="User Image">
+                        <span class="hidden-xs" id="user-name"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="user-header">
+                            <img src="~/css/user/avatar.jpg" class="img-circle" alt="User Image">
+                            <p id="user-organizationName"></p>
+                        </li>
+                        <li class="user-footer">
+                            <div id="changePwd" class="pull-left" data-href="/Console/Home/ChangePassword">
+                                <a class=" btn eip-btn btn-flat"><i class="fa fa-key">修改密码</i></a>
+                            </div>
+
+                            <div id="longinOut" class="pull-right">
+                                <a href="#" class="btn bg-red btn-default btn-flat"><i class="fa fa-power-off">退出登录</i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="control-sidebar" title="设置">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+

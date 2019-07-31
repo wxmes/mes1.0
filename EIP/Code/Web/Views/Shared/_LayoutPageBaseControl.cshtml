@@ -1,0 +1,79 @@
+﻿<script src="/lib/plugins/jquery/jquery-2.2.3.min.js" asp-append-version="true"></script>
+<script src="/lib/plugins/ueditor/dialogs/internal.js" asp-append-version="true"></script>
+<div class="modal-body">
+    <form id="controlform" method="POST" class="form-horizontal">
+        @RenderBody()
+    </form>
+</div>
+<link rel="stylesheet" href="~/lib/plugins/fonts/css/font-awesome.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/plugins/ionicons/css/ionicons.min.css" asp-append-version="true" />
+<link href="~/lib/plugins/select/jquery.searchableSelect.css" rel="stylesheet" asp-append-version="true"/>
+<script src="~/lib/plugins/select/jquery.searchableSelect.js" asp-append-version="true"></script>
+<link href="~/lib/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true">
+<link href="~/lib/plugins/pace/theme/pace-theme-loading-bar.css" id="pace-style" rel="stylesheet" asp-append-version="true" />
+<link href="~/lib/plugins/bootstrap-notify/toastr.css" rel="stylesheet" asp-append-version="true" />
+<script src="~/lib/plugins/pace/pace.min.js" asp-append-version="true"></script>
+<environment names="Development">
+    <script src="~/lib/resource/language_zh.js" asp-append-version="true"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/build/js/eip.resource.min.js" asp-append-version="true"></script>
+</environment>
+<script src="~/lib/plugins/bootstrap/js/bootstrap.min.js" asp-append-version="true"></script>
+<script src="~/lib/plugins/bootstrap-notify/toastr.min.js" asp-append-version="true"></script>
+<script>
+    toastr.options =
+        {
+            "closeButton": true,
+            "debug": true,
+            "progressBar": true,
+            "preventDuplicates": false,
+            "positionClass": "toast-top-center",
+            "showDuration": "400",
+            "hideDuration": "1000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "timeOut": '1000',
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+    $(".m", this.form).after("<font face='宋体'>*</font>");
+</script>
+
+<environment names="Development">
+    <link rel="stylesheet" href="~/lib/dist/css/AdminLTE.css" asp-append-version="true">
+</environment>
+<environment names="Staging,Production">
+    <link href="~/build/css/eip.adminlte.min.css" rel="stylesheet" asp-append-version="true" />
+</environment>
+@*切换皮肤*@
+<script src="/lib/function.js" asp-append-version="true"></script>
+<script src="/lib/dist/js/sidebar-menu.js" asp-append-version="true"></script>
+<link href="/css/extention/skin.css" rel="stylesheet" asp-append-version="true" />
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<style>
+    .form-horizontal .form-group font {
+        color: red;
+        font-weight: bold;
+    }
+
+    .modal-body {
+        padding: 8px;
+    }
+
+    .nav > li > a {
+        padding: 8px 15px;
+    }
+
+    .input-group-addon {
+        border-left: 0px;
+    }
+
+    .nav-tabs-custom {
+        margin-bottom: 0px;
+    }
+    .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+        background-color: white;
+    }
+</style>

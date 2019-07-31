@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.6</Version>
+    <Authors>孙泽伟</Authors>
+    <Company>EIP开发团队</Company>
+    <Product>Enterprise Information Portal</Product>
+    <Description>EIP业务系统数据访问定义及实现</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\EIP.System.DataAccess.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\EIP.System.DataAccess.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\EIP.Common.Dapper\EIP.Common.Dapper.csproj" />
+    <ProjectReference Include="..\..\..\Common\EIP.Common.DataAccess\EIP.Common.DataAccess.csproj" />
+    <ProjectReference Include="..\..\..\Common\EIP.Common.Models\EIP.Common.Models.csproj" />
+    <ProjectReference Include="..\EIP.System.Models\EIP.System.Models.csproj" />
+  </ItemGroup>
+
+</Project>

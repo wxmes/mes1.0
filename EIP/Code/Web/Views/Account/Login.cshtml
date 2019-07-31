@@ -1,0 +1,78 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EIP基础权限版</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" asp-append-version="true">
+    <link href="https://cdn.bootcss.com/iCheck/1.0.2/skins/all.css" rel="stylesheet" asp-append-version="true">
+    <link href="https://cdn.bootcss.com/iCheck/1.0.2/skins/flat/blue.css" rel="stylesheet" asp-append-version="true">
+    <link href="https://cdn.bootcss.com/pace/1.0.2/themes/white/pace-theme-flat-top.min.css" rel="stylesheet" asp-append-version="true">
+</head>
+<body class="hold-transition login-page login-body">
+    <div class="login-box" id="login-app">
+        <div class="login-logo">
+            <a href="#"><b>EIP基础权限版</b></a>
+        </div>
+        <div class="login-box-body">
+            <div style="text-align: center">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1039318332&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1039318332:51" alt="点击这里给我发消息" title="点击这里给我发消息" /></a>
+                <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=d4fb056cbc686c01af64c4d713feb4ed36d60c873e721d69f2d8ddcacd4ed81b"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="EIP交流" title="EIP交流"></a>
+            </div>
+            <p class="login-box-msg"></p>
+            <div id="submitMsg">
+                <h4><i class="icon fa fa-check"></i> </h4>
+            </div>
+            <div class="form-group has-feedback">
+                <input id="userCode" class="form-control" v-model="userCode" placeholder="用户名" value="admin">
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input id="userPwd" type="password" v-model="userPwd" class="form-control" placeholder="密码" value="123456">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <div id="slide_box">
+                    <div id="slide_xbox">
+                        <div id="verify_btn">
+                            <i class="iconfont icon-double-right"></i>
+                        </div>
+                    </div>
+                    请按住滑块，拖动到最右边
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="checkbox icheck">
+                        <label>
+                            <input type="checkbox" id="remember" checked="checked"> 记住我
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <button id="submit" type="submit" autocomplete="off" data-loading-text="登录中..." class="btn btn-primary btn-block btn-flat">登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/pace/1.0.2/pace.min.js" asp-append-version="true"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js" asp-append-version="true"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" asp-append-version="true"></script>
+    <script src="https://cdn.bootcss.com/iCheck/1.0.2/icheck.min.js" asp-append-version="true"></script>
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/dist/css/AdminLTE.css" asp-append-version="true">
+        <script src="~/lib/resource/language_zh.js" asp-append-version="true"></script>
+        <script src="~/app/account/login.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <link href="~/build/css/eip.adminlte.min.css" rel="stylesheet" asp-append-version="true" />
+        <script src="~/build/js/eip.resource.min.js" asp-append-version="true"></script>
+        <script src="~/build/js/account/login.min.js" asp-append-version="true"></script>
+    </environment>
+    <link href="~/css/login/login.css" rel="stylesheet" asp-append-version="true" />
+    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+</body>
+</html>

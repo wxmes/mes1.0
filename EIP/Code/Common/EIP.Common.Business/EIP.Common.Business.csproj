@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.2.0</Version>
+    <Authors>孙泽伟</Authors>
+    <Company>EIP开发团队</Company>
+    <Product>Enterprise Information Portal</Product>
+    <Description>EIP业务逻辑基类实现,包括基础增删改查。</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EIP.Common.DataAccess\EIP.Common.DataAccess.csproj" />
+    <ProjectReference Include="..\EIP.Common.Models\EIP.Common.Models.csproj" />
+  </ItemGroup>
+
+</Project>

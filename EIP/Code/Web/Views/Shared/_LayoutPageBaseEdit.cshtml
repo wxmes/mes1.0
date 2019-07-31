@@ -1,0 +1,17 @@
+﻿<div class="modal-body">
+    <form id="editform" method="POST" name="editform" class="form-horizontal">
+        @RenderBody()
+        <div class="box-footer text-right">
+            <!--以下两种方式提交验证,根据所需选择-->
+            <button type="submit" class="btn btn-success btn-flat" data-toggle="tooltip" title="确定" data-btn-type="save"><span class="bootstrap-dialog-button-icon fa fa-check"></span>确定</button>
+            <button type="button" class="btn btn-danger btn-flat" data-toggle="tooltip" title="取消" data-btn-type="cancel" data-dismiss="modal"><span class="bootstrap-dialog-button-icon fa fa-times"></span>取消</button>
+        </div>
+    </form>
+</div>
+<environment names="Development">
+    <script src="~/app/common/share/layout-page-base-edit.js"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/build/js/common/share/layout-page-base-edit.min.js" asp-append-version="true"></script>
+</environment>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

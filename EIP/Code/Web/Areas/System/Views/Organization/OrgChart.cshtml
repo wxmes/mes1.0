@@ -1,0 +1,24 @@
+﻿<div id="chart-container" style="height:600px;overflow: auto"></div>
+<script src="~/lib/plugins/orgchart/js/jquery.orgchart.js" asp-append-version="true"></script>
+<link href="~/lib/plugins/orgchart/css/jquery.orgchart.css" rel="stylesheet" asp-append-version="true" />
+<environment names="Development">
+    <script src="~/app/system/organization/orgchart.js" asp-append-version="true"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/build/js/system/organization/orgchart.min.js" asp-append-version="true"></script>
+</environment>
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<style>
+    .orgchart {
+        background: #fff;
+    }
+
+    .content {
+        min-height: 0px;
+    }
+
+    .orgchart.l2r {
+        position: static;
+    }
+</style>

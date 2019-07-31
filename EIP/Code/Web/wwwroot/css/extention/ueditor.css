@@ -1,0 +1,140 @@
+﻿.toolbar {
+    margin-top: 1px;
+    background: #fafbfc;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+}
+
+    .toolbar a {
+        display: inline-block;
+        cursor: pointer;
+        height: 24px;
+        padding: 0 2px 0 2px;
+        line-height: 24px;
+        border: 1px dashed transparent;
+        _border-color: #fafbfc;
+        text-decoration: none;
+        color: #000000;
+    }
+
+        .toolbar a:hover {
+            display: inline-block;
+            cursor: pointer;
+            color: #000;
+            height: 24px;
+            padding: 0 2px 0 2px;
+            line-height: 24px;
+            border: 1px solid rgb(220, 172, 108);
+            background: rgb(255, 245, 212);
+            text-decoration: none;
+        }
+
+        .toolbar a span {
+            cursor: pointer;
+            padding-left: 20px;
+            display: inline-block;
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+
+#formtext span {
+    background: url(images/ueditor/input.png) no-repeat center;
+}
+
+#formtextarea span {
+    background: url(images/ueditor/textarea.png) no-repeat center;
+}
+
+#formhtml span {
+    background: url(images/ueditor/html.png) no-repeat center;
+}
+
+#formradio span {
+    background: url(images/ueditor/radio.png) no-repeat center;
+}
+
+#formcheckbox span {
+    background: url(images/ueditor/checkbox.png) no-repeat center;
+}
+
+#formhidden span {
+    background: url(images/ueditor/hidden.png) no-repeat center;
+}
+
+#formselect span {
+    background: url(images/ueditor/select.png) no-repeat center;
+}
+
+#formlabel span {
+    background: url(images/ueditor/label.png) no-repeat center;
+}
+
+#formbutton span {
+    background: url(images/ueditor/button.png) no-repeat center;
+}
+
+#formcombox span {
+    background: url(images/ueditor/combox.png) no-repeat center;
+}
+
+#formsumtext span {
+    background: url(images/ueditor/sumtext.png) no-repeat center;
+}
+
+#formorg span {
+    background: url(images/ueditor/org.png) no-repeat center;
+}
+
+#formdictionary span {
+    background: url(images/ueditor/dictionary.png) no-repeat center;
+}
+
+#formdatetime span {
+    background: url(images/ueditor/datetime.png) no-repeat center;
+}
+
+#formfiles span {
+    background: url(images/ueditor/files.png) no-repeat center;
+}
+
+#formsubtable span {
+    background: url(images/ueditor/subtable.png) no-repeat center;
+}
+
+#formgrid span {
+    background: url(images/ueditor/grid.png) no-repeat center;
+}
+
+#formsignature span {
+    background: url(images/ueditor/signature.png) no-repeat center;
+}
+
+#formselectdiv span {
+    background: url(images/ueditor/selectdiv.png) no-repeat center;
+}
+
+#formserialnumber span {
+    background: url(images/ueditor/formserialnumber.png) no-repeat center;
+}
+
+#formsave span {
+    background: url(images/ueditor/save.png) no-repeat center;
+}
+
+#formsaveas span {
+    background: url(images/ueditor/saveas.png) no-repeat center;
+}
+
+#formpublic span {
+    background: url(images/ueditor/public.png) no-repeat center;
+}
+
+#formpreview span {
+    background: url(images/ueditor/preview.png) no-repeat center;
+}
+
+.edui-default .edui-editor {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}

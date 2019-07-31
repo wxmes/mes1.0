@@ -1,0 +1,94 @@
+﻿
+@{
+    Layout = null;
+}
+<div class="layui-tab layui-tab-brief">
+    <ul class="layui-tab-title">
+        <li class="layui-this">基础信息</li>
+        <li>归属角色</li>
+        <li>归属岗位</li>
+        <li>归属组</li>
+    </ul>
+    <div class="layui-tab-content">
+        <div class="layui-tab-item layui-show">
+            <table class="table table-hover" id="userdetail">
+                <tbody>
+                    <tr>
+                        <th style="width:20%">登录名:</th>
+                        <td id="Code"></td>
+                    </tr>
+
+                    <tr>
+                        <th>姓名:</th>
+                        <td id="Name"></td>
+                    </tr>
+                    <tr>
+                        <th>手机号码:</th>
+                        <td id="Mobile"></td>
+                    </tr>
+                    <tr>
+                        <th>邮箱:</th>
+                        <td id="Email"></td>
+                    </tr>
+                    <tr>
+                        <th>QQ:</th>
+                        <td id="Qq"></td>
+                    </tr>
+                    <tr>
+                        <th>微信号:</th>
+                        <td id="WeChat"></td>
+                    </tr>
+
+                    <tr>
+                        <th>办公电话:</th>
+                        <td id="OfficeMobile"></td>
+                    </tr>
+
+                    <tr>
+                        <th>其他联系信息:</th>
+                        <td id="OtherContactInformation"></td>
+                    </tr>
+                    <tr>
+                        <th>冻结:</th>
+                        <td>
+                            <label id="IsFreezeFormatter"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>部门负责人:</th>
+                        <td >
+                            <label id="IsOrganizationLeaderFormatter"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>类型:</th>
+                        <td id="StatusName"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            备注:
+                        </th>
+                        <td id="Remark"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="layui-tab-item">
+            <table class="layui-hide" id="userrole"></table>
+        </div>
+        <div class="layui-tab-item">
+            <table class="layui-hide" id="userpost"></table>
+        </div>
+        <div class="layui-tab-item">
+            <table class="layui-hide" id="usergroup"></table>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="DetailUserId" value="@Context.Request.Query["id"]" />
+<environment names="Development">
+    <script src="~/app/system/user/detail.js" asp-append-version="true"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/build/js/system/user/detail.min.js" asp-append-version="true"></script>
+</environment>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

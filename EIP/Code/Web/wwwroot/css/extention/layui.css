@@ -1,0 +1,62 @@
+﻿.layui-table, .layui-table-view {
+    margin: 0px;
+    color: black;
+}
+
+    .layui-table-view .layui-table td, .layui-table-view .layui-table th {
+        padding: 1px 0;
+    }
+
+    .layui-table-view .layui-table[lay-size=sm] .layui-table-cell {
+        height: 26px;
+        line-height: 26px;
+    }
+
+.layui-table-cell {
+    padding: 0 4px;
+}
+
+.layui-table-tips-c {
+    padding: 0px;
+}
+
+.layui-layer-dialog .layui-layer-content {
+    line-height: 20px;
+}
+
+.layui-timeline-content span {
+    margin-right: 4px;
+}
+
+.layui-tab {
+    margin: 0px;
+}
+
+.layui-tab-brief > .layui-tab-title .layui-this {
+    color: #000;
+}
+
+.layui-tab-content {
+    padding: 4px;
+}
+
+.layui-tab-title {
+    margin-bottom: 0px;
+    height: 38px;
+}
+
+    .layui-tab-title li {
+        line-height: 38px;
+    }
+
+.layui-tab .ui-sortable-handle {
+    cursor: move;
+}
+
+.layui-text {
+    font-size: 12px;
+}
+
+.layui-table-view .layui-table td {
+    cursor: pointer;
+}

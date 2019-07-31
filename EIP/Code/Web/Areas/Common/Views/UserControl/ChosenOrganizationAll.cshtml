@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" asp-append-version="true">
+<link rel="stylesheet" href="~/lib/fonts/css/font-awesome.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/ionicons/css/ionicons.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/dist/css/AdminLTE.min.css" asp-append-version="true">
+<link rel="stylesheet" href="~/lib/dist/css/skins/_all-skins.min.css" asp-append-version="true">
+<script src="~/lib/plugins/jquery/jquery-2.2.3.min.js" asp-append-version="true"></script>
+<script src="~/lib/plugins/ueditor/ueditor.config.js" asp-append-version="true"></script>
+<script src="~/lib/plugins/ueditor/ueditor.all.min.js" asp-append-version="true"></script>
+<script src="~/lib/plugins/ueditor/lang/zh-cn/zh-cn.js" asp-append-version="true"></script>
+<script src="~/lib/plugins/ueditor/plugins/plugins.js" asp-append-version="true"></script>
+<script src="~/lib/plugins/ueditor/plugins/compule.js" asp-append-version="true"></script>
+
+<link href="~/lib/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" asp-append-version="true" />
+<script src="~/lib/plugins/jstree/dist/jstree.js" asp-append-version="true"></script>
+<script src="~/lib/resource/language_zh.js" asp-append-version="true"></script>
+<link href="~/lib/plugins/bootstrap-notify/toastr.css" rel="stylesheet" asp-append-version="true" />
+<script src="~/lib/plugins/bootstrap-notify/toastr.min.js" asp-append-version="true"></script>
+<script src="~/lib/function.js" asp-append-version="true"></script>
+
+<div class="input-group" style="margin: 2px">
+    <input type="text" id="keywords" class="form-control" placeholder="请输入名称进行查询...">
+    <span class="input-group-addon" style="cursor: pointer" id="search"><i class="fa fa-search"></i></span>
+</div>
+<ul id="select-tree" class="jstree" style="padding-left: 2px"></ul>
+<script src="~/app/common/usercontrol/chosen-organization-all.js"></script>
